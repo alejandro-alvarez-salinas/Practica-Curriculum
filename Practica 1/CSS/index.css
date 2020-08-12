@@ -1,0 +1,59 @@
+im
+div{
+	background: transparent;
+}
+
+form{
+	text-align: center;
+}
+
+.mi_foto{
+	width: 30%;
+	height: 50%;
+	float: left;
+	padding-top: 30px;
+}
+
+.size{
+	width: 100%;
+	height: 100%;
+}
+
+.button_form{
+	width: 10%;
+	height: 5%;
+	color: #dcdcdc;
+	float: center;
+	background: #060606;
+	border: 1px solid #dcdcdc;
+	margin:  1%;
+}
+.label_1{
+	color: #dcdcdc;
+}
+label{
+	color: #212f3c;
+}
+
+input{
+	border: 1px solid #dcdcdc;
+	color: #6e6a6a;
+	background: #060606;
+	text-align: center;
+}
+
+a{
+	color: #dcdcdc;
+}
+
+label:hover {
+	background: #808b96;
+}
+
+h1:hover {
+	background: #808b96;
+}
+
+h3:hover {
+	background: #808b96;
+}
