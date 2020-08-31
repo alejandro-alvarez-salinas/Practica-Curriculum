@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background: #0f222b;
+}
+
+/* Menu desplegable */
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Arial';
+	text-decoration: none;
+}
+
+.menu  li  a:hover{
+	color: #ce7d35;
+	transition: all .5s;
+}
+
+/* Submenu */
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Arial';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+/* Curriculum */
+
+.contenedor{
+	margin: auto;
+	width: 100%;
+
+}
+
+/* Borde Animado */
+
+.caja_columna{
+	color: #fff;
+	background: #0f222b;
+	position: relative;
+	font-family: 'Calibri Light';
+	font-size: 16;
+	width: 100%;
+	height: 440px;
+	margin: 10px; 
+
+}
+
+.caja_columna .texto{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border: 2px solid #69ca62;
+	
+}
+
+.caja_columna .texto h2{
+	font-size: 20px;
+	text-align: center;
+}
+.caja_columna .texto p{
+	font-size: 18px;
+	margin: 11px;
+	text-align: center;
+
+}
+
+
+h2:hover, p:hover{
+
+	color: #69ca62;
+}
+
+svg,rect{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	fill: transparent;
+}
+
+rect{
+	stroke: #69ca62;
+	stroke-width:4;
+	stroke-dasharray: 400;
+	animation: animate 4s linear infinite;
+}
+
+.imagen_flotante{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 100%;
+
+}
+
+.github{
+	height: 10%;
+	background: #fff;
+
+}
+
+.icono{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+.mi_foto{
+	width: 200px;
+	height: 90%;
+}
+
+
+.caja .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.img_rmovil{
+	display: none;
+
+}
+
+@keyframes animate{
+	0%{
+		stroke-dashoffset:800;
+	}
+	100%{
+		stroke-dashoffset:0;
+	}
+}
+
+@media(max-width:500px){
+
+	.caja_columna{
+		width: 100%;
+		height: 800px;
+	}
+
+	.imagen_flotante{
+	margin: 0;
+	padding: 0;
+	
+	height: 40%;
+
+	}
+
+	.github{
+	height: 10%;
+	background: #fff;
+
+	}
+
+	.icono{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	}
+
+	.mi_foto{
+	width: 100%;
+	height: 80%;
+	}
+	}
+
+@media(min-width:1000px){
+	.contenedor{
+		width: 1000px;
+	}
+	.caja_columna{
+		width: 80%;
+		height: 400px;
+	}
+}
+
+
+
+
